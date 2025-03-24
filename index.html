@@ -17,6 +17,7 @@
   <body>
     <nav class="navbar">
       <div><img src="images/logo.png" class="logo" alt="" /></div>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
       <ul class="montserrat-300 uppercase">
         <li><a href="#home">Parks</a></li>
         <li><a href="#about">Cruise</a></li>
@@ -85,5 +86,11 @@
       <p>&copy; 2025 Disney. All rights reserved.</p>
     </footer>
     <script src="main.js"></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".navbar ul");
+        menu.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
